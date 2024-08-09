@@ -20,8 +20,9 @@ img {vertical-align: middle;}
   background-color: #ffffff;
 }
 .logoimg {
-  background-image: url("/assets/img/logoofspcam-removebg-preview.png");
+  background-image: url("/assets/img/main_logo.jpg");
   background-size: cover;
+  scale: 0.7;
   height: 100px;
   width: 100%;
 }
