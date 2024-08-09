@@ -1,0 +1,318 @@
+/* * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 3px 0px 0px gold;
+}
+.logo {
+  height: 60px;
+  width: 100px;
+  background-color: #ffffff;
+}
+.logoimg {
+  background-image: url("/assets/img/logoofspcam-removebg-preview.png");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #000000e6;
+  transform: translatex(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu a {
+  color: white;
+  padding: 20px;
+  display: block;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: white;
+  background-color: #0073dd;
+  border-radius: 5px;
+}
+.sidebaricon {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  z-index: 20;
+  cursor: pointer;
+  top: 22px;
+  right: 15px;
+  margin-top: 20px;
+  position: fixed;
+}
+#opensidemenu:checked ~ .sidebar {
+  transform: translateX(0px);
+}
+#opensidemenu:checked ~ .sidebaricon > .spinar.midal {
+  opacity: 0;
+}
+#opensidemenu:checked ~ .sidebaricon > .spinar.top {
+  transform: rotate(45deg);
+  margin-top: 8px;
+  background: white;
+}
+#opensidemenu:checked ~ .sidebaricon > .spinar.bottom {
+  transform: rotate(-45deg);
+  margin-top: -13px;
+  background: white;
+}
+.spinar {
+  height: 3px;
+  background: #000;
+  transition: all 0.3s;
+  margin: 3px;
+}
+.spinar.midal,
+.spinar.bottom {
+  margin-top: 3px;
+}
+input {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* iot image */
+.img1 {
+  height: 30vh;
+  width: 50vw;
+  box-shadow: 0px 5px 5px 0px rgba(255, 166, 0, 0.907);
+  border-radius: 10px;
+}
+.src {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 1s ease-in;
+}
+.src:hover {
+  transform: scale(1.1, 1.1);
+}
+.txt {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.imgtxt {
+  margin-top: 5%;
+}
+li {
+  margin-top: 10px;
+}
+ol .txt1 {
+  color: #0073dd;
+  font-size: 1.5rem;
+}
+.spcamhead {
+  text-align: Center;
+  margin-top: 50px;
+  font-family: arial;
+  font-style: oblique;
+}
+.blue {
+  color: #0073dd;
+}
+
+/* krish--------------------------------------------------------------------- */
+footer {
+  /* background-color: #00000066; */
+  height: 600px;
+  color: black;
+  padding: 20px 0;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(0, 115, 221, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(0, 115, 221, 0.06);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 15px;
+  font-size: small;
+}
+
+.footer-column h4 {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-column button {
+  background-color: #555;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-column button:hover {
+  background-color: #777;
+}
+
+.svg1 {
+  width: 50%;
+}
+.svg2 {
+  width: 85%;
+}
+
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  margin: 30px;
+  justify-content: space-evenly;
+  font-size: 40px;
+}
+
+.location {
+  width: 100%;
+  height: 150%;
+  margin-bottom: 7%;
+  border-radius: 10px;
+}
+.icon {
+  background: rgba(0, 115, 221, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(0, 115, 221, 0.06);
+}
+.ul {
+  text-decoration: 3px underline;
+}
