@@ -1,0 +1,40 @@
+	
+	.r1{
+		text-align: center;
+		font-size: 40px;
+	}
+
+
+	.r2{
+		color: red;
+	}
+
+	.r3{
+		color: rgb(130	, 125, 125);
+		margin-top: 10%;
+		font-size: 20px;
+	}
+	.li1{
+		padding: 7px;
+		font-size: 20px;
+		color: rgb(130, 125, 125);
+		
+		
+		
+	}
+	
+
+	.b1{
+		background-color:#3d5a80;
+
+		color:white;
+		width: 13%;
+		height: 6vh;
+		
+		border-radius: 7px;
+		border: none;
+
+		
+	}
+
+	
