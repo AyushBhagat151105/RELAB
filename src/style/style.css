@@ -216,9 +216,11 @@
     box-shadow: 0px 5px 5px 0px rgba(255, 166, 0, 0.907);
     overflow: hidden;
   }
-  .box h2 {
+  .box h2{
     font-size: 1.2rem;
+    text-align: center;
     /* font-family: satoshi-bold; */
+    text-decoration: underline;
   }
   .box1 .img1 {
     height: 100px;
@@ -228,8 +230,16 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+  
+  }
   .box1 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .box2 .img2 {
     height: 200px;
@@ -242,9 +252,16 @@
     margin-top: -30px;
   }
   .box2 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
   }
-
+  .img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+  
+  }
   .box3 .img3 {
     height: 150px;
     width: 160px;
@@ -257,7 +274,15 @@
     margin-top: -50px;
   }
   .box3 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+  .img3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+  
   }
   .box4 .img4 {
     height: 80px;
@@ -269,7 +294,15 @@
         margin-bottom: 90px; */
   }
   .box4 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+  .img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+  
   }
   .box5 .img5 {
     height: 100px;
@@ -282,8 +315,16 @@
     margin-bottom: 30px;
   }
   .box5 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
     padding-bottom: 20px;
+  }
+  .img5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+  
   }
   /*akshay--------------------------------------------  */
   .perent {
