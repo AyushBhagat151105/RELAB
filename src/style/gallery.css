@@ -173,6 +173,7 @@ input {
 
 /* iot image */
 .img1 {
+  margin: 15px;
   height: 30vh;
   width: 50vw;
   box-shadow: 0px 5px 5px 0px rgba(255, 166, 0, 0.907);
