@@ -23,7 +23,7 @@
 
   .sidebar {
     height: 100%;
-    width: 100%;
+    width: 250px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
     top: 0;
     right: 0;
     background-color: #000000e6;
-    transform: translatex(100%);
+    transform: translatex(250px);
     transition: transform 0.4s ease-in-out;
   }
 
@@ -135,8 +135,8 @@
     font-family: futura;
     transform: translateY(-30%);
     animation-name: animation;
-    animation-duration: 0.6s;
-    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-delay: 4s;
     overflow: hidden;
   }
   @keyframes animation {
@@ -642,7 +642,7 @@
     stroke-dasharray: 4500;
     animation: draw 8s ease;
     animation: pop 2s ease-in-out 0.5s 1;
-    transform: scale(0, 0);
+    transform: scale(2, 2);
   }
   @keyframes pop {
     from {
