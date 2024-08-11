@@ -318,3 +318,71 @@ footer {
 .ul {
   text-decoration: 3px underline;
 }
+
+.perent {
+  width: 690px;
+  display: flex;
+  padding: 10px;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.gallery {
+  width: 900px;
+  display: flex;
+  padding: 30px;
+  overflow-x: scroll;
+  height: 600px;
+  width: 98%;
+  height: auto;
+}
+.gallery .photo {
+  width: 98%;
+  height: auto;
+  max-height: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+  /* border: 2px solid black; */
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 6px -19px 20px -22px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+.gallery .photo img {
+  width: 70%;
+  height: 50%;
+  /* border: 2px solid black; */
+}
+.gallery .photo h4 {
+  color: #262626;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+#f {
+  color: blue;
+  font-size: 40px;
+  cursor: pointer;
+}
+#l {
+  color: blue;
+  font-size: 40px;
+  cursor: pointer;
+}
+.gallery-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.dev {
+  text-align: center;
+  margin-bottom: 10px;
+}
